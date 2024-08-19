@@ -1,23 +1,17 @@
-/*
- * Author by FreeHTML5.co
- * Twitter: https://twitter.com/fh5co
- * Facebook: https://fb.com/fh5co
- * URL: https://freehtml5.co
- */
 /* Fonts */
 @font-face {
-  font-family: 'Calisto-MT';
-  src: url(../fonts/Calisto-MT.ttf);
+  font-family: 'Font-MT';
+  src: url(../fonts/Helvetica.ttf);
 }
 
 @font-face {
-  font-family: 'Calisto-MT-Italic';
-  src: url(../fonts/Calisto-MT-Italic.ttf);
+  font-family: 'Font-MT-Italic';
+  src: url(../fonts/Helvetica-Oblique.ttf);
 }
 
 @font-face {
-  font-family: 'Calisto-MT-Bold';
-  src: url(../fonts/Calisto-MT-Bold.ttf);
+  font-family: 'Font-MT-Bold';
+  src: url(../fonts/Helvetica-Bold.ttf);
 }
 
 @keyframes slideInFromLeft {
@@ -45,7 +39,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Calisto-MT";
+  font-family: "Font-MT";
 }
 
 .site-container {
@@ -185,7 +179,7 @@
 }
 
 /* Navigation burger end */
-.fh5co-top-banner {
+.top-banner {
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -194,7 +188,7 @@
   background-size: cover;
 }
 
-.fh5co-top-banner::after {
+.top-banner::after {
   content: '';
   position: absolute;
   top: 0;
@@ -205,31 +199,31 @@
   opacity: 0.9;
 }
 
-.fh5co-top-banner .site-container {
+.top-banner .site-container {
   position: relative;
   z-index: 1;
 }
 
 @media (max-width: 1600px) {
-  .fh5co-top-banner {
+  .top-banner {
     padding-top: 130px;
   }
 }
 
 @media (max-width: 1250px) {
-  .fh5co-top-banner {
+  .top-banner {
     padding-top: 130px;
   }
 }
 
 @media (max-width: 520px) {
-  .fh5co-top-banner {
+  .top-banner {
     padding-top: 105px;
   }
 }
 
 @media (min-width: 1600px) {
-  .fh5co-top-banner {
+  .top-banner {
     min-height: 100vh;
   }
 }
@@ -281,7 +275,7 @@
   font-size: 74px;
   letter-spacing: 3px;
   color: #fff;
-  font-family: "Calisto-MT-Bold";
+  font-family: "Font-MT-Bold";
 }
 
 @media (max-width: 1250px) {
@@ -373,19 +367,19 @@
   color: #777;
 }
 
-.fh5co-about-me {
+.about-me {
   position: relative;
   margin: 160px 0 160px;
 }
 
 @media (max-width: 1250px) {
-  .fh5co-about-me {
+  .about-me {
     margin: 150px 0;
   }
 }
 
 @media (max-width: 992px) {
-  .fh5co-about-me {
+  .about-me {
     margin: 125px 0;
   }
 }
@@ -520,7 +514,7 @@
   font-size: 90px;
   line-height: 75px;
   color: #c18f59;
-  font-family: "Calisto-MT-Bold";
+  font-family: "Font-MT-Bold";
 }
 
 @media (max-width: 992px) {
@@ -616,7 +610,7 @@
   outline: none;
 }
 
-.fh5co-books.experience {
+.work-exp.experience {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/env.jpg");
   color: white;
   padding: 60px 30px;
@@ -633,31 +627,31 @@
   padding: 16px;
 }
 
-.fh5co-books {
+.work-exp {
   margin-bottom: 122px;
 }
 
-.fh5co-books .universal-h2 {
+.work-exp .universal-h2 {
   margin-bottom: 50px;
   padding-bottom: 20px;
 }
 
-.fh5co-books .books-brand-button {
+.work-exp .books-brand-button {
   text-align: center;
 }
 
-.fh5co-books .books-brand-button .brand-button {
+.work-exp .books-brand-button .brand-button {
   font-size: 16px;
   text-transform: none;
   border-color: #c18f59;
 }
 
-.fh5co-books .books-brand-button .brand-button:hover {
+.work-exp .books-brand-button .brand-button:hover {
   border-color: #777;
 }
 
 @media (max-width: 1250px) {
-  .fh5co-books {
+  .work-exp {
     margin-bottom: 60px;
   }
 }
@@ -751,7 +745,7 @@
   position: absolute;
 }
 
-.fh5co-counter {
+.counter {
   position: relative;
   margin-bottom: 122px;
   padding: 100px 0;
@@ -760,7 +754,7 @@
   background-position: center;
 }
 
-.fh5co-counter::after {
+.counter::after {
   content: '';
   position: absolute;
   top: 0;
@@ -771,13 +765,13 @@
   opacity: 0.9;
 }
 
-.fh5co-counter .site-container {
+.counter .site-container {
   position: relative;
   z-index: 1;
 }
 
 @media (max-width: 850px) {
-  .fh5co-counter {
+  .counter {
     padding: 50px 0 20px;
     margin-bottom: 50px;
   }
@@ -836,17 +830,17 @@
   margin-right: 20px;
 }
 
-.fh5co-blog {
+.therapy {
   margin-bottom: 100px;
 }
 
-.fh5co-blog .universal-h2 {
+.therapy .universal-h2 {
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
 
 @media (max-width: 620px) {
-  .fh5co-blog {
+  .therapy {
     margin-bottom: 105px;
   }
 }
@@ -898,7 +892,7 @@ p.therapy {
   margin-bottom: 15px;
   font-size: 14px;
   color: #c18f59;
-  font-family: "Calisto-MT-Bold";
+  font-family: "Font-MT-Bold";
 }
 
 .single-blog-therapy .single-blog__text p {
@@ -1016,7 +1010,7 @@ p.therapy {
   border-color: #777;
 }
 
-.fh5co-quotes {
+.motivation {
   position: relative;
   padding: 80px 0 10px;
   text-align: center;
@@ -1025,7 +1019,7 @@ p.therapy {
   background-size: cover;
 }
 
-.fh5co-quotes::after {
+.motivation::after {
   content: '';
   position: absolute;
   top: 0;
@@ -1036,18 +1030,18 @@ p.therapy {
   opacity: 0.9;
 }
 
-.fh5co-quotes .site-container {
+.motivation .site-container {
   position: relative;
   z-index: 1;
 }
 
-.fh5co-quotes .universal-h2 {
+.motivation .universal-h2 {
   padding-bottom: 20px;
   margin-bottom: 30px;
   color: #fff !important;
 }
 
-.fh5co-quotes p {
+.motivation p {
   width: 60%;
   margin: 0 auto 45px;
   color: #fff;
@@ -1055,52 +1049,52 @@ p.therapy {
 }
 
 @media (max-width: 620px) {
-  .fh5co-quotes p {
+  .motivation p {
     font-size: 14px;
     line-height: 19px;
   }
 }
 
-.fh5co-quotes img {
+.motivation img {
   margin: 0 auto 5px;
 }
 
-.fh5co-quotes h4 {
+.motivation h4 {
   margin-bottom: 5px;
   font-size: 25px;
   color: #c18f59;
 }
 
-.fh5co-quotes .slick-arrow {
+.motivation .slick-arrow {
   bottom: -8%;
 }
 
-.fh5co-quotes .slick-prev {
+.motivation .slick-prev {
   left: 45.5%;
 }
 
 @media (max-width: 1150px) {
-  .fh5co-quotes .slick-prev {
+  .motivation .slick-prev {
     left: 34%;
   }
 }
 
-.fh5co-quotes .slick-next {
+.motivation .slick-next {
   right: 45.5%;
 }
 
 @media (max-width: 1150px) {
-  .fh5co-quotes .slick-next {
+  .motivation .slick-next {
     right: 34%;
   }
 }
 
 @media (max-width: 1150px) {
-  .fh5co-quotes {
+  .motivation {
     padding: 75px 0 95px;
   }
 
-  .fh5co-quotes p {
+  .motivation p {
     width: 90%;
   }
 }
