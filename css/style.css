@@ -748,7 +748,7 @@
 .counter {
   position: relative;
   margin-bottom: 122px;
-  padding: 100px 0;
+  padding: 70px 0;
   background-image: url("../images/book-bckg.jpg");
   background-size: cover;
   background-position: center;
@@ -797,8 +797,10 @@
 }
 
 .single-count p {
-  font-size: 20px;
+  font-size: 22px;
   text-transform: uppercase;
+  font-weight: 600;
+  margin: 8px 0px;
 }
 
 @media (max-width: 850px) {
@@ -831,7 +833,7 @@
 }
 
 .therapy {
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
 .therapy .universal-h2 {
@@ -861,7 +863,7 @@
 .single-blog-therapy {
   display: flex !important;
   justify-content: center;
-  padding: 12px;
+  padding: 10px 5px 10px 5px;
 }
 
 p.therapy {
@@ -1101,7 +1103,7 @@ p.therapy {
 
 .cred-image {
   position: relative;
-  padding: 63px 0;
+  padding: 30px 0;
   background-image: url("../images/social-bckg.jpg");
   background-size: cover;
   background-position: center;
@@ -1408,7 +1410,7 @@ li {
 .top-banner__inner .top-banner__image .img {
   position: relative;
   width: 100%;
-  
+
   img {
     position: relative;
   }
@@ -1426,5 +1428,40 @@ li {
     transform: rotate(4deg);
     transform-origin: 40% 70%;
     box-shadow: inset 0 1px 1px 0 hsla(0, 0%, 100%, .15), 0 50px 100px -20px rgba(50, 50, 93, .3), 0 30px 60px -30px rgba(0, 0, 0, .5), -10px 10px 60px -10px rgba(103, 178, 111, .3);
+  }
+}
+
+.counters img {
+  width: 70%;
+  height: 220px;
+  padding: 26px;
+  border-radius: 26%;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.cred-image {
+  .social {
+    justify-content: space-around !important;
+  }
+
+  img {
+    width: 300px;
+    height: 120px;
+    border-radius: 32px;
+    box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #ccc;
+    border: 12px solid #1d0303;
+    padding: 10px;
+  }
+
+  img:nth-child(1) {
+    background: #f9cb3d;
+  }
+
+  img:nth-child(2) {
+    background: #049bd2;
+    margin: 25px;
   }
 }
