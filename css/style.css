@@ -16,7 +16,7 @@
 
 @keyframes slideInFromLeft {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-10%);
   }
 
   100% {
@@ -26,7 +26,7 @@
 
 @keyframes slideInFromRight {
   0% {
-    transform: translateX(100%);
+    transform: translateX(10%);
   }
 
   100% {
@@ -1099,7 +1099,7 @@ p.therapy {
   }
 }
 
-.fh5co-social {
+.cred-image {
   position: relative;
   padding: 63px 0;
   background-image: url("../images/social-bckg.jpg");
@@ -1107,7 +1107,7 @@ p.therapy {
   background-position: center;
 }
 
-.fh5co-social::after {
+.cred-image::after {
   content: '';
   position: absolute;
   top: 0;
@@ -1118,13 +1118,13 @@ p.therapy {
   opacity: 0.9;
 }
 
-.fh5co-social .site-container {
+.cred-image .site-container {
   position: relative;
   z-index: 1;
 }
 
 @media (max-width: 620px) {
-  .fh5co-social {
+  .cred-image {
     padding: 40px 0;
   }
 }
@@ -1406,12 +1406,12 @@ li {
 }
 
 .top-banner__inner .top-banner__image .img {
+  position: relative;
+  width: 100%;
+
   img {
     position: relative;
   }
-
-  position: relative;
-  width: 100%;
 
   &::before {
     content: " ";
