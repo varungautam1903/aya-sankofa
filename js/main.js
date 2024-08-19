@@ -11,6 +11,15 @@
 //   });
 // });
 
+$(document).ready(function () {
+  let lang = localStorage.getItem("lang");
+  if (lang != null) {
+    changeLanguage(lang);
+  } else {
+    changeLanguage(document.documentElement.lang);
+  }
+});
+
 var counta = 0;
 $(window).scroll(function (e) {
   /* Onscroll number counter */
@@ -45,25 +54,14 @@ $(window).scroll(function (e) {
   }
 });
 
-// Function to fetch language data
-async function fetchLanguageData(lang) {
-  const response = await fetch(
-    `https://aya-sankofa.netlify.app/lang/${lang}.json`,
-    { mode: "no-cors" }
-  );
-  return response.json();
-}
-
-// Function to set the language preference
-function setLanguagePreference(lang) {
-  localStorage.setItem("language", lang);
-}
-
 // Function to change language
 async function changeLanguage(lang) {
-  setLanguagePreference(lang);
-  // const langData = await fetchLanguageData(lang);
-  const langData = await returnJsonData(`https://aya-sankofa.netlify.app/lang/${lang}.json`);
+  // setLanguagePreference(lang);
+  localStorage.setItem("lang", lang);
+
+  const langData = await returnJsonData(
+    `https://aya-sankofa.netlify.app/lang/${lang}.json`
+  );
   updateContent(langData);
 }
 
@@ -78,27 +76,22 @@ function updateContent(langData) {
 // This mthod will return the JSON
 const returnJsonData = async (url) => {
   const jsonData = await jsonFileReader(url);
-  console.log('Here is your JSON data: => ', jsonData);
-  return jsonData;
-}
+  return JSON.parse(jsonData);
+};
 
 // Method which actually read json using XMLHttpRequest and promise
-const jsonFileReader = async path => {
+const jsonFileReader = async (path) => {
   return new Promise((resolve, reject) => {
+    const request = new XMLHttpRequest();
+    request.open("GET", path, true);
+    request.responseType = "blob";
+    request.onload = () => {
+      const reader = new FileReader();
+      reader.onload = (e) => resolve(e.target.result);
+      reader.onerror = (err) => reject(err);
+      reader.readAsText(request.response);
+    };
 
-      const request = new XMLHttpRequest();
-      request.open('GET', path, true);
-      // request.responseType = 'blob';
-      request.setRequestHeader("Content-Type", "application/json");
-
-      request.onload = () => {
-        const reader = new FileReader();
-
-        reader.onload = e => resolve(e.target.result);
-        reader.onerror = err => reject(err);
-        reader.readAsDataURL(request.response);
-      };
-
-      request.send();
+    request.send();
   });
-}
+};

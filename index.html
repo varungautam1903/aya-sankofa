@@ -23,15 +23,15 @@
 					<li><a href="#">Page 4</a></li>
 				</ul>
 			</div>
-			<!-- <ul>
+			<ul>
 				<li><a onclick="changeLanguage('en')">English</a></li>
 				<li><a onclick="changeLanguage('fr')">عربي</a></li>
-			</ul> -->
-			<div id="myBtn" class="burger-container" onclick="myFunction(this)">
+			</ul>
+			<!-- <div id="myBtn" class="burger-container" onclick="myFunction(this)">
 				<div class="bar1"></div>
 				<div class="bar2"></div>
 				<div class="bar3"></div>
-			</div>
+			</div> -->
 			<script>
 				function myFunction(x) {
 					x.classList.toggle("change");
@@ -52,14 +52,12 @@
 			</div>
 			<div class="top-banner__text">
 				<div class="top-banner__text-up">
-					<h1 data-i18n="welcome_message"></h1>
-    				<p data-i18n="about_us"></p>
-					<span class="brand-span">Welcome to</span>
-					<h2 class="top-banner__h2">Aya</h2>
-					<h2 class="top-banner__h2 top-h2_middle">Sankofa</h2>
+					<span class="brand-span" data-i18n="welcome_message"></span>
+					<h2 class="top-banner__h2" data-i18n="aya"></h2>
+					<h2 class="top-banner__h2 top-h2_middle" data-i18n="sankofa"></h2>
 				</div>
 				<div class="top-banner__text-down">
-					<h2 class="top-banner__h2">Therapy</h2>
+					<h2 class="top-banner__h2" data-i18n="therapy"></h2>
 					<span class="brand-span">What does « Aya Sankofa » mean?</span>
 				</div>
 				<p>Originally from Ghana, in Akan: Aya represents endurance, independence and perseverance.
