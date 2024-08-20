@@ -11,7 +11,16 @@
 //   });
 // });
 
+$(window).on("load", function () {
+  
+});
+
 $(document).ready(function () {
+  setTimeout(function () {
+    $(".page-loader").fadeOut("slow");
+  }, 500);
+
+
   let lang = localStorage.getItem("lang");
   if (lang != null) {
     changeLanguage(lang);
