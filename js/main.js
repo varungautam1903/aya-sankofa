@@ -58,11 +58,11 @@ $(window).scroll(function (e) {
 async function changeLanguage(lang) {
   // setLanguagePreference(lang);
   localStorage.setItem("lang", lang);
+  // const langData = loadJson();
 
-  // const langData = await returnJsonData(
-  //   `https://aya-sankofa.netlify.app/lang/${lang}.json`
-  // );
-  const langData = loadJson();
+  const langData = await returnJsonData(
+    `https://aya-sankofa.netlify.app/lang/${lang}.json`
+  );
   updateContent(langData);
 }
 

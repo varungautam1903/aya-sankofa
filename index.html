@@ -34,6 +34,12 @@
 			</div>
 			<script>
 				function myFunction(x) {
+					let data = localStorage.getItem("lang") ?? "en";
+					if (data == 'en') {
+						changeLanguage('fr');
+					} else {
+						changeLanguage('en');
+					}
 					x.classList.toggle("change");
 				}
 			</script>
