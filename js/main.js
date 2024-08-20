@@ -11,14 +11,10 @@
 //   });
 // });
 
-$(window).on("load", function () {
-  
-});
-
 $(document).ready(function () {
   setTimeout(function () {
     $(".page-loader").fadeOut("slow");
-  }, 500);
+  }, 1000);
 
 
   let lang = localStorage.getItem("lang");
