@@ -14,7 +14,7 @@
 $(document).ready(function () {
   setTimeout(function () {
     $(".page-loader").fadeOut("slow");
-  }, 1000);
+  }, 1200);
 
 
   let lang = localStorage.getItem("lang");

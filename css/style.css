@@ -39,7 +39,7 @@
   width: 100%;
   height: 110vh;
   overflow: hidden;
-  position: absolute;
+  position: fixed;
   background: #272727;
   z-index: 1000;
 
