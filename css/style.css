@@ -140,7 +140,7 @@
 /* Includes */
 .site-navigation {
   position: absolute;
-  top: 3.6%;
+  top: 2.6%;
   width: 100%;
   z-index: 2;
 }
@@ -254,7 +254,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #4592d0;
+  background: linear-gradient(179deg, #2d7ed7, #e4c545);
   opacity: 0.9;
 }
 

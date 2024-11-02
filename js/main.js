@@ -25,6 +25,14 @@ $(document).ready(function () {
   }
 });
 
+new WOW({
+  boxClass: 'wow',      // animated element css class (default is wow)
+  animateClass: 'animate__animated', // default animation class
+  offset: 2,          // distance to start the animation (0 = immediate)
+  mobile: true,       // trigger animations on mobile devices
+  live: true        // act on asynchronously loaded content
+}).init();
+
 var counta = 0;
 $(window).scroll(function (e) {
   /* Onscroll number counter */
