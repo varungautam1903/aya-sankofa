@@ -326,7 +326,7 @@
 
 .top-banner__inner .top-banner__text p {
   margin-bottom: 42px;
-  color: #234d4b;
+  color: #06100f;
 }
 
 @media (max-width: 768px) {
@@ -627,7 +627,7 @@
 .about-me__text p {
   margin-bottom: 35px;
   line-height: 24px;
-  color: #010a09;
+  color: #06100f;
 }
 
 .about-me__text p span {
